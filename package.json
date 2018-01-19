@@ -20,7 +20,8 @@
     "start": "webpack-dev-server --content-base build/ --inline --hot",
     "dev1": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
     "dev2": "NODE_ENV=development concurrently -c blue,cyan,magenta \"webpack --watch --config webpack.config.server.js\" \"sleep 3 && nodemon --watch build/server build/server/bundle.js\" \"webpack-dev-server -d --hot --inline --no-info --port 3020 --config webpack.config.js\"",
-    "dev": "NODE_ENV=development concurrently -c blue,cyan,magenta \"webpack --watch --config webpack.config.server.js\" \"sleep 3 && nodemon --watch build/server build/server/bundle.js\" \"webpack-dev-server --devtool eval --progress --colors --hot --content-base build\" "
+    "dev": "NODE_ENV=development concurrently -c blue,cyan,magenta \"webpack --watch --config webpack.config.server.js\" \"sleep 3 && nodemon --watch build/server build/server/bundle.js\" \"webpack-dev-server --devtool eval --progress --colors --hot --content-base build\" ",
+    "devbg &": "NODE_ENV=development concurrently -c blue,cyan,magenta \"webpack --watch --config webpack.config.server.js\" \"sleep 3 && nodemon --watch build/server build/server/bundle.js\" \"webpack-dev-server --devtool eval --progress --colors --hot --content-base build\" "
   },
   "author": "todd",
   "license": "MIT",
