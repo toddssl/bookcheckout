@@ -31,7 +31,7 @@ export class App extends React.Component<any, any> {
     let books = JSON.stringify(data);
     let jsonValue = JSON.parse(books);
 
-    axios.post('http://localhost:3000/api/save', jsonValue)
+    axios.post('localhost:3000/api/save', jsonValue)
     .then((response)=>{
       console.log(response.data)
     })
@@ -41,7 +41,7 @@ export class App extends React.Component<any, any> {
   private loadBooksData = () => {
 
     let stateObj = this;
-    axios.get('http://localhost:3000/api/get')
+    axios.get('localhost:3000/api/get')
     .then(function (response) {
       let storeRefBooks: string = response.data;
       if(storeRefBooks) {
