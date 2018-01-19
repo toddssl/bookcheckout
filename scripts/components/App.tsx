@@ -3,7 +3,7 @@ import * as React from "react";
 import { Book } from "./Book";
 import { AddForm } from "./AddForm";
 import { BookDataProps, BookData, InventoryProps } from "../libs/interfaces";
-import axios from "Axios";
+import axios from "axios";
 
 /**
  * App container
