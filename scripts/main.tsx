@@ -15,8 +15,11 @@ import "../css/style.styl";
  */
 var routes = (
   <Router history={createHistory()}>
+    {/*
     <Route path="/wt/book" component={App}/>
     <Route path="*" component={NotFound}/>
+    */}
+    <Route path="*" component={App}/>
   </Router>
 );
 
